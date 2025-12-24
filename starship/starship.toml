@@ -3,8 +3,7 @@
 add_newline = true
 
 format = """
-[┌──────────────────────────────────────────────────────────────▶](bold green)
-[│](bold green)$username\
+$username\
 $hostname$localip$directory$time\
 $shlvl\
 $singularity\
@@ -82,13 +81,13 @@ $crystal\
 $custom\
 $sudo\
 $line_break\
-[│](bold green)$shell$os$status$cmd_duration$jobs$container
+$shell$os$status$cmd_duration$jobs$container
 $character"""
 
 # Change the default prompt characters
 [character]
-success_symbol = '[ׂ└─▶](bold green) '
-error_symbol = '[ׂ└─✗✗✗](bold red) '
+success_symbol = '[ׂ--->>>](bold green) '
+error_symbol = '[ׂ---✗✗✗](bold red) '
 
 # Shows the username
 [username]
